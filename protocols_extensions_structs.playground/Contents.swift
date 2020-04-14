@@ -82,14 +82,52 @@ let int: Int = 99
 print(int.square())
 print(int.isEven)
 
-
-//enum
-enum Days: String {
-    case MON = "weekday"
-    case TUE = "weekday"
-    case WED = "weekday"
-    case THU = "weekday"
-    case FRI = "weekday"
-    case SAT = "weekend"
-    case SUN = "weekend"
+extension String {
+    
+    func explode() -> String? {
+        
+        var result = ""
+        
+        for (index, char) in self.enumerated() {
+            
+            if index == 0 {
+                
+                result += "\(char)"
+                
+            }else {
+                
+                result += " \(char)"
+                
+            }
+            
+        }
+        
+        if result == "" {
+            
+            return nil
+            
+        }
+        
+        
+        
+        return result
+        
+    }
 }
+let str: String = "pineapple"
+let str2: String = "M"
+print(str.explode()!)
+print(str2.explode()!)
+print("".explode())
+
+
+////enum
+//enum Days: String {
+//    case MON = "weekday"
+//    case TUE = "weekday"
+//    case WED = "weekday"
+//    case THU = "weekday"
+//    case FRI = "weekday"
+//    case SAT = "weekend"
+//    case SUN = "weekend"
+//}

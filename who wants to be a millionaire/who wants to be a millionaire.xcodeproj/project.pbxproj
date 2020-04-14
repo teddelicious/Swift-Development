@@ -13,6 +13,7 @@
 		B11E75AA242014A50031CD8E /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E75A9242014A50031CD8E /* Answer.swift */; };
 		B11E75AC2422A6BE0031CD8E /* EasyMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E75AB2422A6BE0031CD8E /* EasyMoney.swift */; };
 		B11E75AE2422A7D90031CD8E /* HardMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E75AD2422A7D90031CD8E /* HardMoney.swift */; };
+		B11E75B02422CCFC0031CD8E /* LifeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11E75AF2422CCFC0031CD8E /* LifeLine.swift */; };
 		B123C174241306580052012E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B123C173241306580052012E /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		B11E75A9242014A50031CD8E /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		B11E75AB2422A6BE0031CD8E /* EasyMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMoney.swift; sourceTree = "<group>"; };
 		B11E75AD2422A7D90031CD8E /* HardMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardMoney.swift; sourceTree = "<group>"; };
+		B11E75AF2422CCFC0031CD8E /* LifeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeLine.swift; sourceTree = "<group>"; };
 		B123C170241306580052012E /* who wants to be a millionaire */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "who wants to be a millionaire"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B123C173241306580052012E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 			children = (
 				B123C173241306580052012E /* main.swift */,
 				B11E759D241AC8E00031CD8E /* Game.swift */,
+				B11E75AF2422CCFC0031CD8E /* LifeLine.swift */,
 				B11E75A52420112F0031CD8E /* QuestionSet.swift */,
 				B11E75A9242014A50031CD8E /* Answer.swift */,
 				B11E75AB2422A6BE0031CD8E /* EasyMoney.swift */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11E75AC2422A6BE0031CD8E /* EasyMoney.swift in Sources */,
+				B11E75B02422CCFC0031CD8E /* LifeLine.swift in Sources */,
 				B11E75AE2422A7D90031CD8E /* HardMoney.swift in Sources */,
 				B123C174241306580052012E /* main.swift in Sources */,
 				B11E75A8242012690031CD8E /* Question.swift in Sources */,

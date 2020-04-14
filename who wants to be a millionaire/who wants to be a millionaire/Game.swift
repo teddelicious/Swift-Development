@@ -19,6 +19,8 @@ class Game {
     var currentRound: Int
     var currentQuestion: Int
     var correctCount: Int
+    var lifeLines: LifeLine
+    var isLifeLineAvailable: Bool
     
     //predefined constants
     let GAME_OVER: Int = 3
@@ -31,26 +33,42 @@ class Game {
         self.currentRound = 0
         self.currentQuestion = 0
         self.correctCount = 0
+        if (difficulty == 0) {
+            self.isLifeLineAvailable = true
+        }else{
+            self.isLifeLineAvailable = false
+        }
+        self.lifeLines = LifeLine()
         self.questionNums = Array(0...(GAME_OVER*getDiffRoundCount()-1)).shuffled()
-        print(self.questionNums)
+//        print(self.questionNums)
     }
     
     func start() {
+        print("Hello \(self.name), welcome to who wants to be a millionaire!")
         while(self.currentRound < self.GAME_OVER) {
             //handle question prompt & answer
             let index = self.currentQuestion + getDiffRoundCount() * self.currentRound
             print("Round: \(self.currentRound + 1), Question: \(self.currentQuestion + 1)")
+            if (self.isLifeLineAvailable) {
+                print("Life lines are available. You may press (L) at any time to use a life line.")
+            }
             let questionSet = QuestionSet(num: self.questionNums[index])
             
             //prompt question & check for correct answer
             repeat {
                 questionSet.prompt()
+                if self.isLifeLineAvailable && questionSet.requestHelp {
+                    questionSet.setHint(hint: self.lifeLines.prompt(correctAnswerNum: questionSet.correctAnswerNum, choices: questionSet.choices))
+                }else if !self.isLifeLineAvailable && questionSet.requestHelp {
+                    print("Life line unavailable.")
+                    questionSet.requestHelp = false
+                }
             }while (!questionSet.confirmAnswer())
-            if (questionSet.isAnswerCorrect()) {
+            if (!questionSet.requestHelp && questionSet.isAnswerCorrect()) {
                 print("You are correct!")
                 print("You currently hold a total of $\(getCurrentMoney())")
                 self.currentQuestion += 1
-            }else{
+            }else if (!questionSet.requestHelp){
                 print("You are incorrect! Game Over.")
                 return
             }
@@ -64,12 +82,17 @@ class Game {
                     return
                 } else if (promptWalkAway()) {
                     print("Congratulations! You've walked away with $\(getCurrentMoney())")
+                    return
                 }
                 
                 self.currentRound += 1
                 self.currentQuestion = 0
+                self.isLifeLineAvailable = true
             }
-            self.correctCount += 1
+            
+            if (!questionSet.requestHelp) {
+                self.correctCount += 1
+            }
         }
     }
 
@@ -104,11 +127,11 @@ class Game {
         }
     }
     
-    func getCurrentMoney() -> Double {
+    func getCurrentMoney() -> String {
         if (self.difficulty == 0) {
-            return EasyMoney.allCases[self.correctCount].rawValue
+            return String(format: "%.2f", EasyMoney.allCases[self.correctCount].rawValue)
         }
-        return HardMoney.allCases[self.correctCount].rawValue
+        return String(format: "%.2f", HardMoney.allCases[self.correctCount].rawValue)
         
     }
     
