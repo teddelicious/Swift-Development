@@ -19,16 +19,16 @@ class MainTabController: UITabBarController {
         print("viewdidload in maintabcontroller")
         
         //testing data
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd"
-        patientProcessor.registerPatient(patient: Patient(name: "John1", dob: formatter.date(from: "2020/04/20")!, recentlyTraveled: false))
-        patientProcessor.registerPatient(patient: Patient(name: "John2", dob: formatter.date(from: "2000/04/20")!, recentlyTraveled: true))
-        patientProcessor.registerPatient(patient: Patient(name: "John3", dob: formatter.date(from: "1990/04/20")!, recentlyTraveled: true))
-        patientProcessor.registerPatient(patient: Patient(name: "John4", dob: formatter.date(from: "1980/04/20")!, recentlyTraveled: true))
-        patientProcessor.registerPatient(patient: Patient(name: "John5", dob: formatter.date(from: "1970/04/20")!, recentlyTraveled: false))
-        patientProcessor.registerPatient(patient: Patient(name: "John6", dob: formatter.date(from: "1960/04/20")!, recentlyTraveled: true))
-        patientProcessor.registerPatient(patient: Patient(name: "John7", dob: formatter.date(from: "1950/04/20")!, recentlyTraveled: false))
-        patientProcessor.registerPatient(patient: Patient(name: "John8", dob: formatter.date(from: "1940/04/20")!, recentlyTraveled: true))
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy/MM/dd"
+//        patientProcessor.registerPatient(patient: Patient(name: "John1", dob: formatter.date(from: "2020/04/20")!, recentlyTraveled: false))
+//        patientProcessor.registerPatient(patient: Patient(name: "John2", dob: formatter.date(from: "2000/04/20")!, recentlyTraveled: true))
+//        patientProcessor.registerPatient(patient: Patient(name: "John3", dob: formatter.date(from: "1990/04/20")!, recentlyTraveled: true))
+//        patientProcessor.registerPatient(patient: Patient(name: "John4", dob: formatter.date(from: "1980/04/20")!, recentlyTraveled: true))
+//        patientProcessor.registerPatient(patient: Patient(name: "John5", dob: formatter.date(from: "1970/04/20")!, recentlyTraveled: false))
+//        patientProcessor.registerPatient(patient: Patient(name: "John6", dob: formatter.date(from: "1960/04/20")!, recentlyTraveled: true))
+//        patientProcessor.registerPatient(patient: Patient(name: "John7", dob: formatter.date(from: "1950/04/20")!, recentlyTraveled: false))
+//        patientProcessor.registerPatient(patient: Patient(name: "John8", dob: formatter.date(from: "1940/04/20")!, recentlyTraveled: true))
     }
     
 
