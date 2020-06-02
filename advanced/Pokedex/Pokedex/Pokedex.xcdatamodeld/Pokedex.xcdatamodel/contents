@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G12034" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Battle" representedClassName="Battle" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="winningPokemon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pokemon" inverseName="battles" inverseEntity="Pokemon" syncable="YES"/>
+    </entity>
+    <entity name="Pokemon" representedClassName="Pokemon" syncable="YES">
+        <attribute name="baseExpPoints" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="battles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Battle" inverseName="winningPokemon" inverseEntity="Battle" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Battle" positionX="-31.53515625" positionY="37.3046875" width="128" height="75"/>
+        <element name="Pokemon" positionX="-265.57421875" positionY="7.2890625" width="128" height="120"/>
+    </elements>
+</model>

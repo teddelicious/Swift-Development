@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1C1F34F2484331B00DDCCDD /* MealKitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F34E2484331B00DDCCDD /* MealKitDTO.swift */; };
+		B1C1F3512484414D00DDCCDD /* MealKits.json in Resources */ = {isa = PBXBuildFile; fileRef = B1C1F3502484414D00DDCCDD /* MealKits.json */; };
+		B1C1F354248459FC00DDCCDD /* MealKitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F353248459FC00DDCCDD /* MealKitCell.swift */; };
+		B1C1F35624845A1900DDCCDD /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F35524845A1900DDCCDD /* OrderController.swift */; };
+		B1C1F358248499FF00DDCCDD /* MealKitDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F357248499FF00DDCCDD /* MealKitDetailsController.swift */; };
+		B1C1F35A248544DB00DDCCDD /* OrderConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F359248544DB00DDCCDD /* OrderConfirmationController.swift */; };
+		B1C1F35C24855B0100DDCCDD /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F35B24855B0100DDCCDD /* OrderStatus.swift */; };
+		B1C1F35E24857CCF00DDCCDD /* ReceiptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F35D24857CCF00DDCCDD /* ReceiptController.swift */; };
+		B1C1F3692485813600DDCCDD /* MealKit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F35F2485813600DDCCDD /* MealKit+CoreDataClass.swift */; };
+		B1C1F36A2485813600DDCCDD /* MealKit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3602485813600DDCCDD /* MealKit+CoreDataProperties.swift */; };
+		B1C1F36B2485813600DDCCDD /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3612485813600DDCCDD /* Order+CoreDataClass.swift */; };
+		B1C1F36C2485813600DDCCDD /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3622485813600DDCCDD /* Order+CoreDataProperties.swift */; };
+		B1C1F36D2485813600DDCCDD /* OrderItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3632485813600DDCCDD /* OrderItem+CoreDataClass.swift */; };
+		B1C1F36E2485813600DDCCDD /* OrderItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3642485813600DDCCDD /* OrderItem+CoreDataProperties.swift */; };
+		B1C1F36F2485813600DDCCDD /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3652485813600DDCCDD /* User+CoreDataClass.swift */; };
+		B1C1F3702485813600DDCCDD /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3662485813600DDCCDD /* User+CoreDataProperties.swift */; };
+		B1C1F3712485813600DDCCDD /* Coupon+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3672485813600DDCCDD /* Coupon+CoreDataClass.swift */; };
+		B1C1F3722485813600DDCCDD /* Coupon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3682485813600DDCCDD /* Coupon+CoreDataProperties.swift */; };
+		B1C1F37424858D0700DDCCDD /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F37324858D0700DDCCDD /* OrderHistoryController.swift */; };
+		B1C1F37624858DE700DDCCDD /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F37524858DE700DDCCDD /* OrderHistoryCell.swift */; };
+		B1C1F3782485CCB000DDCCDD /* ScratchCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C1F3772485CCB000DDCCDD /* ScratchCardController.swift */; };
+		B1DF29C52482A4AE0067CAE8 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DF29C42482A4AE0067CAE8 /* CommonViewController.swift */; };
+		B1DF29FB248330DA0067CAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DF29FA248330DA0067CAE8 /* Assets.xcassets */; };
+		B1F63C1424813E6C009CCB1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F63C1324813E6C009CCB1A /* AppDelegate.swift */; };
+		B1F63C1624813E6C009CCB1A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F63C1524813E6C009CCB1A /* LoginController.swift */; };
+		B1F63C1924813E6C009CCB1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F63C1724813E6C009CCB1A /* Main.storyboard */; };
+		B1F63C1C24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1F63C1A24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodeld */; };
+		B1F63C2124813E6D009CCB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F63C1F24813E6D009CCB1A /* LaunchScreen.storyboard */; };
+		B1F63C2924814922009CCB1A /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F63C2824814922009CCB1A /* SignupController.swift */; };
+		B1F63C3C2481517E009CCB1A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F63C3B2481517E009CCB1A /* MainController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B1C1F34E2484331B00DDCCDD /* MealKitDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MealKitDTO.swift; path = LiveFitFoodMealKits/Components/MealKitDTO.swift; sourceTree = SOURCE_ROOT; };
+		B1C1F3502484414D00DDCCDD /* MealKits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MealKits.json; sourceTree = "<group>"; };
+		B1C1F353248459FC00DDCCDD /* MealKitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealKitCell.swift; sourceTree = "<group>"; };
+		B1C1F35524845A1900DDCCDD /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		B1C1F357248499FF00DDCCDD /* MealKitDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealKitDetailsController.swift; sourceTree = "<group>"; };
+		B1C1F359248544DB00DDCCDD /* OrderConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationController.swift; sourceTree = "<group>"; };
+		B1C1F35B24855B0100DDCCDD /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+		B1C1F35D24857CCF00DDCCDD /* ReceiptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptController.swift; sourceTree = "<group>"; };
+		B1C1F35F2485813600DDCCDD /* MealKit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealKit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1C1F3602485813600DDCCDD /* MealKit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealKit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1C1F3612485813600DDCCDD /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1C1F3622485813600DDCCDD /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1C1F3632485813600DDCCDD /* OrderItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1C1F3642485813600DDCCDD /* OrderItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1C1F3652485813600DDCCDD /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1C1F3662485813600DDCCDD /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1C1F3672485813600DDCCDD /* Coupon+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B1C1F3682485813600DDCCDD /* Coupon+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coupon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1C1F37324858D0700DDCCDD /* OrderHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
+		B1C1F37524858DE700DDCCDD /* OrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
+		B1C1F3772485CCB000DDCCDD /* ScratchCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardController.swift; sourceTree = "<group>"; };
+		B1DF29C42482A4AE0067CAE8 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		B1DF29FA248330DA0067CAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1F63C1024813E6C009CCB1A /* LiveFitFoodMealKits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveFitFoodMealKits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F63C1324813E6C009CCB1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1F63C1524813E6C009CCB1A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B1F63C1824813E6C009CCB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1F63C1B24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiveFitFoodMealKits.xcdatamodel; sourceTree = "<group>"; };
+		B1F63C2024813E6D009CCB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1F63C2224813E6D009CCB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F63C2824814922009CCB1A /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		B1F63C3B2481517E009CCB1A /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1F63C0D24813E6C009CCB1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1C1F352248459DB00DDCCDD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1C1F34E2484331B00DDCCDD /* MealKitDTO.swift */,
+				B1C1F353248459FC00DDCCDD /* MealKitCell.swift */,
+				B1C1F35B24855B0100DDCCDD /* OrderStatus.swift */,
+				B1C1F37524858DE700DDCCDD /* OrderHistoryCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B1F63C0724813E6C009CCB1A = {
+			isa = PBXGroup;
+			children = (
+				B1C1F35F2485813600DDCCDD /* MealKit+CoreDataClass.swift */,
+				B1C1F3602485813600DDCCDD /* MealKit+CoreDataProperties.swift */,
+				B1C1F3612485813600DDCCDD /* Order+CoreDataClass.swift */,
+				B1C1F3622485813600DDCCDD /* Order+CoreDataProperties.swift */,
+				B1C1F3632485813600DDCCDD /* OrderItem+CoreDataClass.swift */,
+				B1C1F3642485813600DDCCDD /* OrderItem+CoreDataProperties.swift */,
+				B1C1F3652485813600DDCCDD /* User+CoreDataClass.swift */,
+				B1C1F3662485813600DDCCDD /* User+CoreDataProperties.swift */,
+				B1C1F3672485813600DDCCDD /* Coupon+CoreDataClass.swift */,
+				B1C1F3682485813600DDCCDD /* Coupon+CoreDataProperties.swift */,
+				B1F63C1224813E6C009CCB1A /* LiveFitFoodMealKits */,
+				B1F63C1124813E6C009CCB1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1F63C1124813E6C009CCB1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1F63C1024813E6C009CCB1A /* LiveFitFoodMealKits.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1F63C1224813E6C009CCB1A /* LiveFitFoodMealKits */ = {
+			isa = PBXGroup;
+			children = (
+				B1DF29FA248330DA0067CAE8 /* Assets.xcassets */,
+				B1C1F352248459DB00DDCCDD /* Components */,
+				B1F63C2A24814937009CCB1A /* Controllers */,
+				B1F63C1324813E6C009CCB1A /* AppDelegate.swift */,
+				B1F63C1724813E6C009CCB1A /* Main.storyboard */,
+				B1F63C1F24813E6D009CCB1A /* LaunchScreen.storyboard */,
+				B1F63C2224813E6D009CCB1A /* Info.plist */,
+				B1F63C1A24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodeld */,
+				B1C1F3502484414D00DDCCDD /* MealKits.json */,
+			);
+			path = LiveFitFoodMealKits;
+			sourceTree = "<group>";
+		};
+		B1F63C2A24814937009CCB1A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1F63C2824814922009CCB1A /* SignupController.swift */,
+				B1F63C3B2481517E009CCB1A /* MainController.swift */,
+				B1F63C1524813E6C009CCB1A /* LoginController.swift */,
+				B1DF29C42482A4AE0067CAE8 /* CommonViewController.swift */,
+				B1C1F35524845A1900DDCCDD /* OrderController.swift */,
+				B1C1F357248499FF00DDCCDD /* MealKitDetailsController.swift */,
+				B1C1F359248544DB00DDCCDD /* OrderConfirmationController.swift */,
+				B1C1F35D24857CCF00DDCCDD /* ReceiptController.swift */,
+				B1C1F37324858D0700DDCCDD /* OrderHistoryController.swift */,
+				B1C1F3772485CCB000DDCCDD /* ScratchCardController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1F63C0F24813E6C009CCB1A /* LiveFitFoodMealKits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F63C2524813E6D009CCB1A /* Build configuration list for PBXNativeTarget "LiveFitFoodMealKits" */;
+			buildPhases = (
+				B1F63C0C24813E6C009CCB1A /* Sources */,
+				B1F63C0D24813E6C009CCB1A /* Frameworks */,
+				B1F63C0E24813E6C009CCB1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveFitFoodMealKits;
+			productName = LiveFitFoodMealKits;
+			productReference = B1F63C1024813E6C009CCB1A /* LiveFitFoodMealKits.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1F63C0824813E6C009CCB1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "John Lin";
+				TargetAttributes = {
+					B1F63C0F24813E6C009CCB1A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B1F63C0B24813E6C009CCB1A /* Build configuration list for PBXProject "LiveFitFoodMealKits" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1F63C0724813E6C009CCB1A;
+			productRefGroup = B1F63C1124813E6C009CCB1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1F63C0F24813E6C009CCB1A /* LiveFitFoodMealKits */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1F63C0E24813E6C009CCB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F63C2124813E6D009CCB1A /* LaunchScreen.storyboard in Resources */,
+				B1F63C1924813E6C009CCB1A /* Main.storyboard in Resources */,
+				B1DF29FB248330DA0067CAE8 /* Assets.xcassets in Resources */,
+				B1C1F3512484414D00DDCCDD /* MealKits.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1F63C0C24813E6C009CCB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C1F35624845A1900DDCCDD /* OrderController.swift in Sources */,
+				B1C1F37424858D0700DDCCDD /* OrderHistoryController.swift in Sources */,
+				B1C1F37624858DE700DDCCDD /* OrderHistoryCell.swift in Sources */,
+				B1C1F358248499FF00DDCCDD /* MealKitDetailsController.swift in Sources */,
+				B1C1F35E24857CCF00DDCCDD /* ReceiptController.swift in Sources */,
+				B1C1F36C2485813600DDCCDD /* Order+CoreDataProperties.swift in Sources */,
+				B1C1F354248459FC00DDCCDD /* MealKitCell.swift in Sources */,
+				B1C1F36B2485813600DDCCDD /* Order+CoreDataClass.swift in Sources */,
+				B1C1F3782485CCB000DDCCDD /* ScratchCardController.swift in Sources */,
+				B1C1F3722485813600DDCCDD /* Coupon+CoreDataProperties.swift in Sources */,
+				B1F63C1624813E6C009CCB1A /* LoginController.swift in Sources */,
+				B1C1F36A2485813600DDCCDD /* MealKit+CoreDataProperties.swift in Sources */,
+				B1C1F36E2485813600DDCCDD /* OrderItem+CoreDataProperties.swift in Sources */,
+				B1C1F3692485813600DDCCDD /* MealKit+CoreDataClass.swift in Sources */,
+				B1F63C1C24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodeld in Sources */,
+				B1C1F3712485813600DDCCDD /* Coupon+CoreDataClass.swift in Sources */,
+				B1C1F34F2484331B00DDCCDD /* MealKitDTO.swift in Sources */,
+				B1C1F35A248544DB00DDCCDD /* OrderConfirmationController.swift in Sources */,
+				B1F63C1424813E6C009CCB1A /* AppDelegate.swift in Sources */,
+				B1C1F36F2485813600DDCCDD /* User+CoreDataClass.swift in Sources */,
+				B1C1F35C24855B0100DDCCDD /* OrderStatus.swift in Sources */,
+				B1F63C2924814922009CCB1A /* SignupController.swift in Sources */,
+				B1C1F3702485813600DDCCDD /* User+CoreDataProperties.swift in Sources */,
+				B1C1F36D2485813600DDCCDD /* OrderItem+CoreDataClass.swift in Sources */,
+				B1DF29C52482A4AE0067CAE8 /* CommonViewController.swift in Sources */,
+				B1F63C3C2481517E009CCB1A /* MainController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B1F63C1724813E6C009CCB1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F63C1824813E6C009CCB1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1F63C1F24813E6D009CCB1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F63C2024813E6D009CCB1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1F63C2324813E6D009CCB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1F63C2424813E6D009CCB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1F63C2624813E6D009CCB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LiveFitFoodMealKits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnlin.LiveFitFoodMealKits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1F63C2724813E6D009CCB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LiveFitFoodMealKits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = johnlin.LiveFitFoodMealKits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1F63C0B24813E6C009CCB1A /* Build configuration list for PBXProject "LiveFitFoodMealKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F63C2324813E6D009CCB1A /* Debug */,
+				B1F63C2424813E6D009CCB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F63C2524813E6D009CCB1A /* Build configuration list for PBXNativeTarget "LiveFitFoodMealKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F63C2624813E6D009CCB1A /* Debug */,
+				B1F63C2724813E6D009CCB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1F63C1A24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1F63C1B24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodel */,
+			);
+			currentVersion = B1F63C1B24813E6C009CCB1A /* LiveFitFoodMealKits.xcdatamodel */;
+			path = LiveFitFoodMealKits.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1F63C0824813E6C009CCB1A /* Project object */;
+}

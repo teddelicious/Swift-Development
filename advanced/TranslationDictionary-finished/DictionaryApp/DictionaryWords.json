@@ -1,0 +1,22 @@
+[
+    {
+        "word":"apple",
+        "translation":"la manzana",
+    },
+    {
+        "word":"banana",
+        "translation":"la banana",
+    },
+    {
+        "word":"carrot",
+        "translation":"la zanahoria",
+    },
+    {
+        "word":"donut",
+        "translation":"el buñuelo",
+    },
+    {
+        "word":"eggplant",
+        "translation":"la berenjena",
+    }
+]

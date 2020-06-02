@@ -1,0 +1,50 @@
+[
+    {
+        "sku": "MK001",
+        "name": "Weight Loss Meal Kit",
+        "desc": "High Protein, low-calorie meals with a nutrient profile tuned for weight loss",
+        "price": 150.00,
+        "calorie_count": 400,
+        "image_path": "img_mk_weight_loss"
+    },
+    {
+        "sku": "MK002",
+        "name": "Muscle Gain Meal Kit",
+        "desc": "Higher protein and calorie portions to support your muscle gain momentum",
+        "price": 150.00,
+        "calorie_count": 600,
+        "image_path": "img_mk_muscle_gain"
+    },
+    {
+        "sku": "MK003",
+        "name": "Keto Meal Kit",
+        "desc": "High fat, low carb meals with moderate protein to achieve and sustain ketosis",
+        "price": 150.00,
+        "calorie_count": 700,
+        "image_path": "img_mk_keto"
+    },
+    {
+        "sku": "MK004",
+        "name": "Vegan Meal Kit",
+        "desc": "A fully plant-based package featuring vegan meat and no animal products",
+        "price": 150.00,
+        "calorie_count": 400,
+        "image_path": "img_mk_vegan"
+    },
+    {
+        "sku": "MK005",
+        "name": "Gluten Free Meal Kit",
+        "desc": "A gluten-free package with the same balanced profile as our other packages",
+        "price": 120.00,
+        "calorie_count": 400,
+        "image_path": "img_mk_gluten_free"
+    },
+    {
+        "sku": "MK006",
+        "name": "Value Meal Kit",
+        "desc": "All of our bestselling value meals in one package for even less",
+        "price": 100.00,
+        "calorie_count": 500,
+        "image_path": "img_mk_value"
+    }
+]

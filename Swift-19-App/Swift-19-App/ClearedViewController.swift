@@ -14,6 +14,13 @@ class ClearedViewController: UIViewController, UITableViewDelegate, UITableViewD
     func patientRowSelected(index: Int) {
         //what to do when function is triggered
         print(index)
+        let box = UIAlertController(title: "Test Confirmation", message: "Is the patient test complete?", preferredStyle: .alert)
+        box.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+        box.addAction(UIAlertAction(title: "Yes", style: .default, handler: {
+            action in
+            self.movePatient(index: index)
+        }))
+        self.present(box, animated: true, completion: nil)
     }
     
     //MARK: outlets
@@ -29,7 +36,7 @@ class ClearedViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell?.labelName.text = self.data[row].name
         cell?.labelAge.text = "Age: \(self.data[row].getAge())"
         cell?.labelRecentlyTraveled.text = "Recently traveled: \(self.data[row].recentlyTraveled ? "Yes" : "No")"
-        
+
         if (cell == nil) {
             cell = PatientTableViewCell(
                 style: UITableViewCell.CellStyle.default,
