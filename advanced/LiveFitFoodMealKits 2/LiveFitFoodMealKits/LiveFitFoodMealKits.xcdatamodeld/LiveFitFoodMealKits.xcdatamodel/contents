@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G12034" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Coupon" representedClassName="Coupon" syncable="YES">
+        <attribute name="applied" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date_created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="owned_by_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
+        <relationship name="used_in_order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="coupon_applied" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="MealKit" representedClassName="MealKit" syncable="YES">
+        <attribute name="calorie_count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date_created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ordered_in" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderItem" inverseName="ordered_meal_kit" inverseEntity="OrderItem" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="date_created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="coupon_applied" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coupon" inverseName="used_in_order" inverseEntity="Coupon" syncable="YES"/>
+        <relationship name="has_order_item" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderItem" inverseName="order" inverseEntity="OrderItem" syncable="YES"/>
+        <relationship name="ordered_by" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="OrderItem" representedClassName="OrderItem" syncable="YES">
+        <attribute name="qty" optional="YES" attributeType="Integer 64" minValueString="1" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="has_order_item" inverseEntity="Order" syncable="YES"/>
+        <relationship name="ordered_meal_kit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MealKit" inverseName="ordered_in" inverseEntity="MealKit" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="date_created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Coupon" positionX="-18" positionY="72" width="128" height="135"/>
+        <element name="MealKit" positionX="-54" positionY="18" width="128" height="165"/>
+        <element name="Order" positionX="-36" positionY="54" width="128" height="150"/>
+        <element name="OrderItem" positionX="-36" positionY="63" width="128" height="90"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>
